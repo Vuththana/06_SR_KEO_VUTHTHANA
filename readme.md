@@ -15,7 +15,8 @@ A Retrieval-Augmented Generation (RAG) pipeline built with Python, ChromaDB, and
 
 1. **Clone the repository and install dependencies:**
    ```bash
-   poetry install
+poetry install
+```
 Ensure Ollama is running and pull your models:
 
 ```bash
@@ -48,17 +49,17 @@ Why: Retains structural coherence and full context for short-to-medium IT proced
 **Question 1 (In Context - Backup Process)**
 Question: How many steps are to backup files?
 ```
-    Retrieved Chunks:
+Retrieved Chunks:
+
+[Chunk 1] Source: 006_Creating_a_Backup_of_Important_Files.txt | Distance: 0.5275
     
-    [Chunk 1] Source: 006_Creating_a_Backup_of_Important_Files.txt | Distance: 0.5275
+[Chunk 2] Source: 002_Resetting_a_Forgotten_PIN.txt | Distance: 0.9400
     
-    [Chunk 2] Source: 002_Resetting_a_Forgotten_PIN.txt | Distance: 0.9400
+[Chunk 3] Source: 009_Resetting_a_Jammed_Printer.txt | Distance: 0.9795
     
-    [Chunk 3] Source: 009_Resetting_a_Jammed_Printer.txt | Distance: 0.9795
+[Chunk 4] Source: 004_Troubleshooting_Issues_with_Microsoft_Office.txt | Distance: 1.0518
     
-    [Chunk 4] Source: 004_Troubleshooting_Issues_with_Microsoft_Office.txt | Distance: 1.0518
-    
-    [Chunk 5] Source: 008_Setting_Up_a_Secure_Wireless_Network.txt | Distance: 1.0931
+[Chunk 5] Source: 008_Setting_Up_a_Secure_Wireless_Network.txt | Distance: 1.0931
 ```
 
 **Final Answer:** 
@@ -96,29 +97,29 @@ Retrieved Chunks:
 
 **Final Answer:**
 ```
-    To reset your PIN, follow these steps:
+To reset your PIN, follow these steps:
     
-    Go to the company's intranet homepage and click on the "IT Support" link at the top right corner of the page.
+Go to the company's intranet homepage and click on the "IT Support" link at the top right corner of the page.
     
-    Click on the "Self-Service" tab and then select "PIN Reset" from the drop-down menu.
+Click on the "Self-Service" tab and then select "PIN Reset" from the drop-down menu.
     
-    You will be redirected to the PIN Reset Tool login page.
+You will be redirected to the PIN Reset Tool login page.
     
-    Enter your company username and password in the required fields.
+Enter your company username and password in the required fields.
     
-    Click the "Login" button to authenticate.
+Click the "Login" button to authenticate.
     
-    You will be prompted to answer your security question. Enter your answer in the required field.
+You will be prompted to answer your security question. Enter your answer in the required field.
     
-    Click the "Next" button to proceed.
+Click the "Next" button to proceed.
     
-    Enter a new PIN in the required field. The PIN must be at least 8 characters long and contain a mix of uppercase and lowercase letters, numbers, and special characters.
+Enter a new PIN in the required field. The PIN must be at least 8 characters long and contain a mix of uppercase and lowercase letters, numbers, and special characters.
     
-    Re-enter your new PIN in the confirmation field to ensure accuracy.
+Re-enter your new PIN in the confirmation field to ensure accuracy.
     
-    Click the "Reset PIN" button to complete the process.
+Click the "Reset PIN" button to complete the process.
     
-    Note: You will be asked to confirm your new PIN before it is applied.
+Note: You will be asked to confirm your new PIN before it is applied.
 ```
 
 **Question 3 (In Context - Printer Troubleshooting)**
@@ -138,23 +139,23 @@ Retrieved Chunks:
 ```
 **Final Answer:**
 ```
-    To fix a jammed printer, you can try the following steps:
+To fix a jammed printer, you can try the following steps:
     
-    Turn off the printer to prevent any further damage or paper jams.
+Turn off the printer to prevent any further damage or paper jams.
     
-    Open the printer's access panel to inspect the internal mechanisms. Common locations include the top, front, or back of the printer.
+Open the printer's access panel to inspect the internal mechanisms. Common locations include the top, front, or back of the printer.
     
-    Carefully pull out any visible paper scraps or torn pieces.
+Carefully pull out any visible paper scraps or torn pieces.
     
-    Check the paper path for any obstructions or debris. Remove any dust, dirt, or other blockages that may be contributing to the jam.
+Check the paper path for any obstructions or debris. Remove any dust, dirt, or other blockages that may be contributing to the jam.
     
-    Realign the paper tray if it was dislodged during the jam.
+Realign the paper tray if it was dislodged during the jam.
     
-    Check and clean the print head to ensure it is free from blockages or dried ink.
+Check and clean the print head to ensure it is free from blockages or dried ink.
     
-    Reassemble the printer in the reverse order of how you disassembled it.
+Reassemble the printer in the reverse order of how you disassembled it.
     
-    Power on the printer and test it by printing a test page or a document. If the printer is still experiencing issues, refer to the manufacturer's troubleshooting guide or contact the IT helpdesk for further assistance.
+Power on the printer and test it by printing a test page or a document. If the printer is still experiencing issues, refer to the manufacturer's troubleshooting guide or contact the IT helpdesk for further assistance.
 ```
 **Question 4 (Out of Context - Unhandled Topic)**
 Question: What is the company policy on remote expense reimbursements for travel?
