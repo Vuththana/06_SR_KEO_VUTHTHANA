@@ -14,7 +14,7 @@ A Retrieval-Augmented Generation (RAG) pipeline built with Python, ChromaDB, and
 ### Installation & Setup
 
 1. **Clone the repository and install dependencies:**
-   ```bash
+```bash
 poetry install
 ```
 Ensure Ollama is running and pull your models:
